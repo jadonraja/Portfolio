@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Raja's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2517d8924d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="slider">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experiences</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="social-icons">
+                        <a href="https://github.com/jadonraja"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/raja-thakur-/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/raja_jadon_/"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-duotone fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE Undergrad</p>
+                <h1>Hey, I'm <span>Raja thakur</span> <br>a Web developer</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------about-----------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mypic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there, I'm Raja , Pre-Final year student at Guru Ghasidas Vishwavidyalaya
+                        , Bilaspur. I am currently interested in Web Development and
+                        Software Development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                            <li>C/C++</li>
+
+                            </li>
+                            <li><span>Development</span><br>
+                            <li>Html/Css</li>
+                            <li>Bootstrap</li>
+                            <li>Node.js</li>
+                            <li>React</li>
+                            <li>Mongodb</li>
+                            <li>Sql</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>November 2022 - May 2023</span><br>Software developer Trainee at Presear Software
+                                private limited
+                                .</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>May 2025</span><br>B.Tech in Computer Science and Engineering from
+                                GGV - CGPA : 8.4</li>
+                            <li><span>July 2020</span><br>12th from Blue Bird School,Aligarh - Percentage : 90.6</li>
+                            <li><span>July 2018</span><br>10th from Blue Bird School,Aligarh - Percentage : 90.6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------sevices-------------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experiences</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Software Developer Trainee</h2>
+                    <h4>Presear Software Private Limited</h4>
+                    <p>
+                        <li>Designed and developed engaging landing pages</li>
+                        <li> Assisted in implementing SEO strategies</li>
+                        <li>Demonstrated strong communication and interpersonal skills</li>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Co-Lead Web Dev Team</h2>
+                    <h4>Google Developer Club</h4>
+                    <p>
+                        <li>Orgaised various events </li>
+                        <li>Imparted knowledge on new web techology</li>
+                        <li>Coducted guidance sessions</li>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Placement Cell Team Member</h2>
+                    <h4>SOSET</h4>
+                    <p>
+                        <li>Contacted various HR's to participate in Placement drives</li>
+                        <li>Did social media promotion for Placement cell </li>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class=" container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class=" work-list">
+                <div class=" work">
+                    <img src="images/work_11.png">
+                    <div class="layer">
+                        <h3>Keeper App</h3>
+                        <p>
+                            A web application designed to streamline and enhance the note-taking process. The
+                            app provides a convenient platform for users to create, organise, and manage their
+                            notes effectively.
+                        </p>
+                        <a href="https://keeper-appbyraja.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="  work">
+                    <img src="images/work_2.png">
+                    <div class="layer">
+                        <h3>Food Website</h3>
+                        <p>
+                            An engaging and visually stunning landing page for a food website that captures the
+                            essence of the food website and effectively drives user engagement.
+                        </p>
+                        <a href="https://comforting-genie-2d0ec3.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class=" work">
+                    <img src="images/work_3.png">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>
+                            It enables the users to perform fundamental mathematical operations such as addition,
+                            subtraction, multiplication and division
+                        </p>
+                        <a href="https://jadonraja.github.io/calculatorapp/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------------contact-----------------  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> rajathakur0008@gmail.com </p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 8791471795 </p>
+                    <a href="images/RajaThakur_Resume.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> @ 2023 Raja</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
